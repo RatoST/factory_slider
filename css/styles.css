@@ -51,5 +51,6 @@ h1 {
   box-sizing: border-box;
   display: table;
   text-align: left;
+  max-width: 400px;
   width: 30%;
 }
