@@ -1,0 +1,35 @@
+
+img {
+  border-radius:15px ;
+  box-sizing: border-box;
+  vertical-align: middle;
+  max-height: 130px;
+  margin: 0.5%;
+}
+
+.column {
+  /* width: 100%; */
+  text-align: center;
+}
+
+.row {
+  content: "";
+  display: table;
+}
+
+.left {
+  box-sizing: border-box;
+  display: table;
+  float: left;
+  width: 66%;
+  margin-left: -10%;
+}
+
+.right {
+  box-sizing: border-box;
+  display: table;
+  float: right;
+  text-align: left;
+  width: 34%;
+  margin-right: 10%;
+}
