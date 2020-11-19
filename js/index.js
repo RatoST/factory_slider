@@ -8,16 +8,24 @@ function moveLeft (id) {
   $(id).append(firstImage);
 }
 
-$('#goRight').click(function() {
-  $('#image-container-1, #image-container-2').fadeOut(300, 'linear');
-  moveRight('#image-container-1');
-  moveRight('#image-container-2');
+$('#goRight').click(() => {
+  $('#image-container-1, #image-container-2').fadeOut(300, 'swing');
+  setTimeout(() => {
+    moveRight('#image-container-1');
+  }, 300); 
+  setTimeout(() => {
+    moveRight('#image-container-2');
+  }, 300);  
   $('#image-container-1, #image-container-2').fadeIn(300, 'linear');
 });
 
-$('#goLeft').click(function() {
-  $('#image-container-1, #image-container-2').fadeOut(300, 'linear');
-  moveLeft('#image-container-1');
-  moveLeft('#image-container-2');
+$('#goLeft').click(() => {
+  $('#image-container-1, #image-container-2').fadeOut(300, 'swing');
+  setTimeout(() => {
+    moveLeft('#image-container-1');
+  }, 300);
+  setTimeout(() => {
+    moveLeft('#image-container-2');  
+  }, 300);  
   $('#image-container-1, #image-container-2').fadeIn(300, 'linear');
 });
