@@ -9,48 +9,82 @@ h1 {
   font-weight: 800;
 }
 
-.image {
-  border-radius:5px ;
-  box-sizing: border-box;
-  vertical-align: middle;
-  max-height: 200px;
-  margin: 0.5%;
-}
-
-.arrows {
-  box-sizing: border-box;
-  display: block;
-  max-height: 500px;
-  float: right;
-  margin: 0.5%;
-  margin-right: 5%;
-}
-
-.arrow-border {
-  border: solid gray 1px;
-  border-radius: 10px;
-  padding: 40%;
+p {
+  color: #6b6868;
 }
 
 .column {
   float: left;
 }
 
-.row {
-  display: table;
-}
-
 .left {
-  box-sizing: border-box;
-  display: table;
   width: 70%;
   margin-left: -10%;
 }
 
 .right {
-  box-sizing: border-box;
-  display: table;
   text-align: left;
   max-width: 400px;
+  margin-left: 1%;
   width: 30%;
+}
+
+.image {
+  border-radius:5px ;
+  max-height: 200px;
+  margin: 0.5%;
+}
+
+.image-slider {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  justify-content: flex-end;
+}
+
+.navigation-container {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0.5%;
+  position: static;
+  vertical-align: top;
+  width: 120px;
+  min-width: 120px;
+  max-width: 120px;
+}
+
+.arrow {
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 10px;
+   float: right;
+   margin: 0.5%;
+   padding: 30px;
+ }
+
+ .toLeft {
+    background-image:url('../images/arrow-gray-left.png');
+    border: solid #b6b6b6 1px;
+ }
+ .toLeft:hover {
+  background-image:url('../images/arrow-blue-left.png');
+  border: solid #134880 1px;
+}
+
+.toRight {
+  background-image:url('../images/arrow-gray-right.png');
+  border: solid #b6b6b6 1px;
+  margin-top: 7px;
+}
+
+.toRight:hover {
+  background-image:url('../images/arrow-blue-right.png');
+  border: solid #134880 1px;
 }
