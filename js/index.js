@@ -9,23 +9,27 @@ function moveLeft (id) {
 }
 
 $('#goRight').click(() => {
-  $('#image-container-1, #image-container-2').fadeOut(300, 'swing');
+  $('.image-1').last().animate({width:'hide'},300);
+  $('.image-2').last().animate({width:'hide'},300);
   setTimeout(() => {
     moveRight('#image-container-1');
   }, 300); 
   setTimeout(() => {
     moveRight('#image-container-2');
   }, 300);  
-  $('#image-container-1, #image-container-2').fadeIn(300, 'linear');
+  $('.image-1').last().animate({width:'show'},300);
+  $('.image-2').last().animate({width:'show'},300);
 });
 
 $('#goLeft').click(() => {
-  $('#image-container-1, #image-container-2').fadeOut(300, 'swing');
+  $('.image-1').first().animate({width:'hide'},300);
+  $('.image-2').first().animate({width:'hide'},300);
   setTimeout(() => {
     moveLeft('#image-container-1');
   }, 300);
   setTimeout(() => {
     moveLeft('#image-container-2');  
   }, 300);  
-  $('#image-container-1, #image-container-2').fadeIn(300, 'linear');
+  $('.image-1').first().animate({width:'show'},300);
+  $('.image-2').first().animate({width:'show'},300);
 });
